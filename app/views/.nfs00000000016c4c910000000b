@@ -17,7 +17,7 @@
                 <div class="container">
                     <a class="brand"  href="@routes.Application.index()" > Quarto</a>
                     <ul class="nav">
-                        <li  class="@("active".when(nav == "romain"))"  >
+                        <li <!-- class="@("active".when(nav == "romain"))" -- > >
                             <a href="#">Jouer</a>
                         </li>
                         

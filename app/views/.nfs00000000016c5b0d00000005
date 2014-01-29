@@ -15,12 +15,14 @@
         <div class="topbar">
             <div class="fill">
                 <div class="container">
-                    <a class="brand"  href="@routes.Application.index()" > Quarto</a>
+                    <a class="brand" href="@routes.Application.index()">Convertisseurs</a>
                     <ul class="nav">
-                        <li  class="@("active".when(nav == "romain"))"  >
-                            <a href="#">Jouer</a>
+                        <li class="@("active".when(nav == "romain"))">
+                            <a href="@routes.ConvEnRomain.blank()">En Romain</a>
                         </li>
-                        
+                        <li class="@("active".when(nav == "decimal"))">
+                            <a href="@routes.ConvEnDecimal.blank()">En Décimal</a>
+                        </li>
                     </ul>
                 </div>
             </div>

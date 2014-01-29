@@ -20,36 +20,29 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object index extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[String,play.api.templates.HtmlFormat.Appendable] {
+object index extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(message: String):play.api.templates.HtmlFormat.Appendable = {
+    def apply():play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*1.19*/("""
-
-"""),_display_(Seq[Any](/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
-
-    """),_display_(Seq[Any](/*5.6*/play20/*5.12*/.welcome(message, style = "Java"))),format.raw/*5.45*/("""
-
-""")))})),format.raw/*7.2*/("""
-"""))}
+Seq[Any](_display_(Seq[Any](/*1.2*/main(Html(""))/*1.16*/(Html("")))))}
     }
     
-    def render(message:String): play.api.templates.HtmlFormat.Appendable = apply(message)
+    def render(): play.api.templates.HtmlFormat.Appendable = apply()
     
-    def f:((String) => play.api.templates.HtmlFormat.Appendable) = (message) => apply(message)
+    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Jan 29 17:18:38 CET 2014
+                    DATE: Wed Jan 29 18:13:41 CET 2014
                     SOURCE: /home/wroux/quarto/app/views/index.scala.html
-                    HASH: c1c7a8094ff6fdf7b189be1a11ff9a14918bbdfd
-                    MATRIX: 774->1|885->18|922->21|953->44|992->46|1033->53|1047->59|1101->92|1134->95
-                    LINES: 26->1|29->1|31->3|31->3|31->3|33->5|33->5|33->5|35->7
+                    HASH: 7aabf1d8ff09bedccd970cdae9ca8f207cb8d736
+                    MATRIX: 864->1|886->15
+                    LINES: 29->1|29->1
                     -- GENERATED --
                 */
             
