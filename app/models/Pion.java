@@ -19,6 +19,11 @@ public class Pion {
 	private boolean couleur;	// true : noir, false : blanc
 	private boolean taille;		// true : grand, false : petit
 
-	
+	public Pion(boolean p, boolean f, boolean c, boolean t){
+		plein = p;
+		forme = f;
+		couleur = c;
+		taille = t;
+	}
 
 }
