@@ -4,7 +4,7 @@
 		module="quarto-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20140129170949"
+		publication="20140129183233"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>

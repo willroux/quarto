@@ -1,6 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/wroux/quarto/public/stylesheets/bootstrap.css,/home/wroux/quarto/target/scala-2.10/classes/public/stylesheets/bootstrap.css)[0m
-[0m[[0mdebug[0m] [0m	(/home/wroux/quarto/public/stylesheets/main.css,/home/wroux/quarto/target/scala-2.10/classes/public/stylesheets/main.css)[0m
-[0m[[0mdebug[0m] [0m	(/home/wroux/quarto/public/javascripts/jquery-1.9.0.min.js,/home/wroux/quarto/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)[0m
-[0m[[0mdebug[0m] [0m	(/home/wroux/quarto/public/javascripts/jquery-1.7.1.min.js,/home/wroux/quarto/target/scala-2.10/classes/public/javascripts/jquery-1.7.1.min.js)[0m
-[0m[[0mdebug[0m] [0m	(/home/wroux/quarto/public/images/favicon.png,/home/wroux/quarto/target/scala-2.10/classes/public/images/favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/barbosa/quarto/public/stylesheets/bootstrap.css,/home/barbosa/quarto/target/scala-2.10/classes/public/stylesheets/bootstrap.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/barbosa/quarto/public/stylesheets/main.css,/home/barbosa/quarto/target/scala-2.10/classes/public/stylesheets/main.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/barbosa/quarto/public/javascripts/jquery-1.9.0.min.js,/home/barbosa/quarto/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/barbosa/quarto/public/javascripts/jquery-1.7.1.min.js,/home/barbosa/quarto/target/scala-2.10/classes/public/javascripts/jquery-1.7.1.min.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/barbosa/quarto/public/images/favicon.png,/home/barbosa/quarto/target/scala-2.10/classes/public/images/favicon.png)[0m
