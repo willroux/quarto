@@ -1,5 +1,6 @@
 # ignorer le dossier target/
-./target/
+./target/*
 
 # ignorer le dossier project/
-./project/
+./project/target/
+./project/project/
