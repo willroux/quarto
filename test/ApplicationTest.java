@@ -20,6 +20,7 @@ import static org.fest.assertions.Assertions.*;
 
 import models.Pion;
 import models.Case;
+import models.Plateau;
 
 /**
 *
@@ -52,7 +53,6 @@ public class ApplicationTest {
         assertThat(c.getPion().isGrand()).isEqualTo(res4);
     }
 
-
     @Test
     public void testPion() {
         Pion p = new Pion(true, true, true, true);
@@ -66,11 +66,16 @@ public class ApplicationTest {
         assert_isGrand(true, true, true, false, false);
     }
 
-
     @Test
     public void testAccesseursCase() {
         assert_setPion(new Pion(true,true,true,true),true,true,true,true);
+    }
 
+    @Test
+    public void testPlateau() {
+        assertThat(new Plateau().getTaille()).isEqualTo(4);
+        assertThat(new Plateau().getGrille(0,0).isVide()).isEqualTo(true);
+        assertThat(new Plateau().getGrille(0,0).getPion()).isEqualTo(null);
     }
 
 }
