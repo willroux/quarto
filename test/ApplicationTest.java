@@ -19,6 +19,7 @@ import static play.test.Helpers.*;
 import static org.fest.assertions.Assertions.*;
 
 import models.Pion;
+import models.Case;
 
 /**
 *
@@ -41,13 +42,24 @@ public class ApplicationTest {
     	assertThat(new Pion(p, r, n, g).isGrand()).isEqualTo(res);
     }
 
+
+    void assert_setPion(Pion p,boolean res,boolean res2,boolean res3,boolean res4){
+        Case c = new Case();
+        c.setPion(p);
+        assertThat(c.getPion().isPlein()).isEqualTo(res);
+        assertThat(c.getPion().isRond()).isEqualTo(res2);
+        assertThat(c.getPion().isNoir()).isEqualTo(res3);
+        assertThat(c.getPion().isGrand()).isEqualTo(res4);
+    }
+
+
     @Test
     public void testPion() {
         Pion p = new Pion(true, true, true, true);
     }
 
     @Test
-    public void testGetters() {
+    public void testGettersPion() {
     	assert_isPlein(false, true, true, true, false);
         assert_isRond(true, false, true, true, false);
         assert_isNoir(true, true, false, true, false);
@@ -55,6 +67,10 @@ public class ApplicationTest {
     }
 
 
+    @Test
+    public void testAccesseursCase() {
+        assert_setPion(new Pion(true,true,true,true),true,true,true,true);
 
+    }
 
 }
