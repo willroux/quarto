@@ -38,7 +38,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main(Html(""))/*1.16*/(Html("")))))}
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Jan 29 18:32:53 CET 2014
+                    DATE: Tue Feb 04 10:54:56 CET 2014
                     SOURCE: /home/barbosa/quarto/app/views/index.scala.html
                     HASH: 7aabf1d8ff09bedccd970cdae9ca8f207cb8d736
                     MATRIX: 864->1|886->15

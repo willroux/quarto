@@ -1,6 +1,6 @@
 // @SOURCE:/home/barbosa/quarto/conf/routes
 // @HASH:9c24f09449355737d0bfbe9ca53280febbd777c7
-// @DATE:Wed Jan 29 18:32:52 CET 2014
+// @DATE:Tue Feb 04 10:54:54 CET 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
