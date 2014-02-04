@@ -28,9 +28,33 @@ import models.Pion;
 */
 public class ApplicationTest {
 
+    void assert_isPlein(boolean p, boolean r, boolean n, boolean g, boolean res) {
+    	assertThat(new Pion(p, r, n, g).isPlein()).isEqualTo(res);
+    }
+    void assert_isRond(boolean p, boolean r, boolean n, boolean g, boolean res) {
+    	assertThat(new Pion(p, r, n, g).isRond()).isEqualTo(res);
+    }
+    void assert_isNoir(boolean p, boolean r, boolean n, boolean g, boolean res) {
+    	assertThat(new Pion(p, r, n, g).isNoir()).isEqualTo(res);
+    }
+    void assert_isGrand(boolean p, boolean r, boolean n, boolean g, boolean res) {
+    	assertThat(new Pion(p, r, n, g).isGrand()).isEqualTo(res);
+    }
+
     @Test
     public void testPion() {
         Pion p = new Pion(true, true, true, true);
     }
+
+    @Test
+    public void testGetters() {
+    	assert_isPlein(false, true, true, true, false);
+        assert_isRond(true, false, true, true, false);
+        assert_isNoir(true, true, false, true, false);
+        assert_isGrand(true, true, true, false, false);
+    }
+
+
+
 
 }

@@ -15,15 +15,16 @@ public class Pion {
 
 	private boolean disponible=true;
 	private boolean plein; 		// true : plein, false : creux
-	private boolean forme;		// true : rond, false : carré
-	private boolean couleur;	// true : noir, false : blanc
-	private boolean taille;		// true : grand, false : petit
+	private boolean rond;		// true : rond, false : carré
+	private boolean noir;		// true : noir, false : blanc
+	private boolean grand;		// true : grand, false : petit
 
-	public Pion(boolean p, boolean f, boolean c, boolean t){
+	public Pion(boolean p, boolean r, boolean n, boolean g){
 		plein = p;
-		forme = f;
-		couleur = c;
-		taille = t;
+		rond = r;
+		noir = n;
+		grand = g;
 	}
 
+	
 }
