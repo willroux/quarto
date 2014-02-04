@@ -26,5 +26,23 @@ public class Pion {
 		grand = g;
 	}
 
-	
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+	public boolean isPlein() {
+		return plein;
+	}
+
+	public boolean isRond() {
+		return rond;
+	}
+
+	public boolean isNoir() {
+		return noir;
+	}
+
+	public boolean isGrand() {
+		return grand;
+	}
 }
