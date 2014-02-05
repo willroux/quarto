@@ -29,5 +29,7 @@ public class Case {
 		this.pion = pion;
 		setVide(false);
 	}
+
+	
 }
 	

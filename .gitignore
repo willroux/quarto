@@ -1,6 +1,7 @@
-# ignorer le dossier target/
-./target/*
-
-# ignorer le dossier project/
-./project/target/
-./project/project/
+logs
+project/project
+project/target
+target
+tmp
+dist
+.cache
