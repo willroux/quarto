@@ -1,1 +1,17 @@
-@main(Html(""))(Html(""))
+@(plateau: models.Plateau)
+
+@import helper._
+
+@main(title="Le jeu du Quarto"){
+
+	<table>
+		
+		@for(i<- 1 to plateau.getTaille()){
+			<tr id="tr_@i">
+				@for(j<-1 to plateau.getTaille()){
+					<td id="case_@i@j">Case @i@j</td>
+				}
+			</tr>
+		}
+	</table>
+}

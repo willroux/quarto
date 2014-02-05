@@ -1,4 +1,4 @@
-@(title: Html, nav: String = "")(content: Html)
+@(title: String)(content: Html)
 
 <!DOCTYPE html>
 
@@ -17,7 +17,7 @@
                 <div class="container">
                     <a class="brand"  href="@routes.Application.index()" > Quarto</a>
                     <ul class="nav">
-                        <li  class="@("active".when(nav == "romain"))"  >
+                        <li  class="active">
                             <a href="#">Jouer</a>
                         </li>
                         
@@ -27,7 +27,6 @@
         </div>
 
         <div class="container">
-@if(! nav.equals("")) {                
             <div class="content">
                 <div class="page-header">
                     <h1>@title</h1>
@@ -39,7 +38,6 @@
                     </div>
                 </div>
             </div>
-}
             <footer>
                 <p>
                     <a href="http://www.playframework.com">www.playframework.com</a>
