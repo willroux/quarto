@@ -4,7 +4,7 @@ public class Plateau {
 
 	private int taille;
 	private Case[][] grille;
-	//private boolean plein;
+	private boolean plein;
 
 
 	public Plateau() {
@@ -25,7 +25,6 @@ public class Plateau {
 		}
 	}
 
-
 	/**
 	 *	Permet une écriture du type : p.getGrille()[2][3];
 	 */
@@ -42,6 +41,15 @@ public class Plateau {
 
 	public int getTaille() {
 		return taille;
+	}
+
+
+	public boolean isPlein() {
+		
+	}
+
+	public void setPlein(boolean plein) {
+		
 	}
 
 }

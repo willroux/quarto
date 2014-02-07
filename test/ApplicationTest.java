@@ -78,4 +78,6 @@ public class ApplicationTest {
         assertThat(new Plateau().getGrille(0,0).getPion()).isEqualTo(null);
     }
 
+   
+
 }
