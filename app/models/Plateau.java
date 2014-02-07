@@ -45,11 +45,20 @@ public class Plateau {
 
 
 	public boolean isPlein() {
-		
+		//On set l'attribut plein à vrai
+		plein = true;
+		for(int j=0; j<taille; ++j) {
+			for(int i=0; i<taille; ++i) {
+				if(grille[i][j].isVide()) { //Dès qu'on rencontre une case vide
+					plein = false; //On set l'attribut plein à faux
+				}
+			}
+		}
+		return plein;
 	}
 
 	public void setPlein(boolean plein) {
-		
+		this.plein = plein;
 	}
 
 }
