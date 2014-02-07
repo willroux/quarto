@@ -78,6 +78,23 @@ public class ApplicationTest {
         assertThat(new Plateau().getGrille(0,0).getPion()).isEqualTo(null);
     }
 
-   
+    @Test
+    public void testPlateauPlein() {
+        //Création du plateau
+        Plateau p = new Plateau();
+
+        //Initialement, le plateau est vide
+        assertThat(p.isPlein()).isEqualTo(false);
+
+        //On remplit toutes les cases du plateau
+        for(int j=0; j<p.getTaille(); ++j) {
+            for(int i=0; i<p.getTaille(); ++i) {
+                p.getGrille(i,j).setVide(false);
+            }
+        }
+
+        //On teste que le test isPlein renvoie bien "true"
+        assertThat(p.isPlein()).isEqualTo(true);
+    }
 
 }
