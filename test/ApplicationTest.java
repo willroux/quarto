@@ -53,6 +53,9 @@ public class ApplicationTest {
         assertThat(c.getPion().isGrand()).isEqualTo(res4);
     }
 
+   
+
+
     @Test
     public void testPion() {
         Pion p = new Pion(true, true, true, true);
@@ -95,6 +98,18 @@ public class ApplicationTest {
 
         //On teste que le test isPlein renvoie bien "true"
         assertThat(p.isPlein()).isEqualTo(true);
+    }
+
+    @Test
+    public void testSac(){
+        Plateau p = new Plateau();
+
+
+        assertThat(p.getSac(9).isPlein()).isEqualTo(false);
+        assertThat(p.getSac(9).isRond()).isEqualTo(true);
+        assertThat(p.getSac(9).isNoir()).isEqualTo(true);
+        assertThat(p.getSac(9).isGrand()).isEqualTo(false);
+
     }
 
 }
