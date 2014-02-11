@@ -5,13 +5,15 @@ public class Plateau {
 	private int taille;
 	private Case[][] grille;
 	private boolean plein;
-
+	private Pion[] sac ;
 
 	public Plateau() {
 		taille = 4;
 		grille = new Case[taille][taille];
+		sac = new Pion[taille*taille];
 		//plein = false;
 		init();
+		initSac();
 	}
 
 	/**
@@ -23,6 +25,11 @@ public class Plateau {
 				grille[i][j] = new Case();
 			}
 		}
+	}
+
+	public void initSac(){
+
+		
 	}
 
 	/**
@@ -59,6 +66,11 @@ public class Plateau {
 
 	public void setPlein(boolean plein) {
 		this.plein = plein;
+	}
+
+
+	public Pion getSac(int i){
+		
 	}
 
 }
