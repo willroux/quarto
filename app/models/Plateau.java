@@ -29,7 +29,40 @@ public class Plateau {
 
 	public void initSac(){
 
-		
+		//plein rond noir grand
+		sac[0] = new Pion(true,true,true,true);
+		//plein rond noir petit
+        sac[1] = new Pion(true,true,true,false);
+        //plein rond blanc grand
+        sac[2] = new Pion(true,true,false,true);
+        //plein rond blanc petit
+        sac[3] = new Pion(true,true,false,false);
+        //plein carre noir grand
+        sac[4] = new Pion(true,false,true,true);
+        //plein carre noir petit
+        sac[5] = new Pion(true,false,true,false);
+        //plein carre blanc grand
+        sac[6] = new Pion(true,false,false,true);
+        //plein carre blanc petit
+        sac[7] = new Pion(true,false,false,false);
+        //creux rond noir grand
+        sac[8] = new Pion(false,true,true,true);
+        //creux rond noir petit
+        sac[9] = new Pion(false,true,true,false);
+        //creux rond blanc grand
+        sac[10] = new Pion(false,true,false,true);
+        //creux rond blanc petit
+        sac[11] = new Pion(false,true,false,false);
+        //creux carre noir grand
+        sac[12] = new Pion(false,false,true,true);
+        //creux carre noir petit
+        sac[13] = new Pion(false,false,true,false);
+        //creux carre blanc grand
+        sac[14] = new Pion(false,false,false,true);
+        //creux carre blanc petit
+        sac[15] = new Pion(false,false,false,false);
+
+
 	}
 
 	/**
@@ -70,7 +103,7 @@ public class Plateau {
 
 
 	public Pion getSac(int i){
-		
+		return sac[i];
 	}
 
 }
