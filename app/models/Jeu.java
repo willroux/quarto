@@ -28,23 +28,15 @@ public class Jeu {
 		return ( plateau.isPlein() || quarto ) ;
 	}
 
-	public void jouerUnTour() {
-		/*
-		Doit contenir :
-			- Changement du joueur courant
-			- Le joueur non courant choisit un pion
-			- Le joueur courant choisi où il place le pion
-			- Fin du tour
-		*/
+
+	public Integer changeJoueurCourant() {
+		if (joueurCourant == 1) {
+			joueurCourant = 2;
+		} else {
+			joueurCourant = 1;
+		}
+		return joueurCourant;
 	}
 
-	public void jouerUnePartie() {
-		/*
-		Contiendra une boucle du genre :
-			while( !finPartie() ) {
-				jouerUnTour();
-				mise_a_jour_de_la_variable_quarto();
-			}
-		*/
-	}
+	
 }
