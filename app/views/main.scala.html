@@ -1,5 +1,6 @@
 @(title: String)(content: Html)
 
+
 <!DOCTYPE html>
 
 <html>
@@ -18,7 +19,7 @@
                     <a class="brand"  href="@routes.Application.index()" > Quarto</a>
                     <ul class="nav">
                         <li  class="active">
-                            <a href="#">Jouer</a>
+                            <a href="@routes.Application.pion()">Jouer</a>
                         </li>
                         
                     </ul>
@@ -37,7 +38,14 @@
                         @content
                     </div>
                 </div>
+
+                
+
             </div>
+
+            
+            
+
             <footer>
                 <p>
                     <a href="http://www.playframework.com">www.playframework.com</a>

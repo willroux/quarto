@@ -8,10 +8,18 @@ import models.*;
 
 public class Application extends Controller {
 
-	final static Plateau plateau = new Plateau(); 
+	final static Jeu jeu = new Jeu(); 
 
     public static Result index() {
-        return ok(index.render(plateau));
+        return ok(index.render());
+    }
+
+    public static Result choixcase() {
+        return ok(choixcase.render(jeu));
+    }
+
+    public static Result pion() {
+        return ok(pion.render(jeu));
     }
 
 }

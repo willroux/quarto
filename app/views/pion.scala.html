@@ -1,0 +1,30 @@
+@(jeu: models.Jeu)
+
+@import helper._
+
+@main(title="Le jeu du Quarto"){
+
+<table>
+		
+	@for(i<- 1 to jeu.getPlateau().getTaille()){
+		<tr id="tr_@i">
+			@for(j<-1 to jeu.getPlateau().getTaille()){
+				<td id="case_@i@j">Case @i@j</td>
+			}
+		</tr>
+	}
+</table>
+
+<div>
+	<h2>Pions dans le sac :</h2>
+	@for(i<- 0 to jeu.getPlateau().getTailleSac()-1){
+		<span id="td_pion_@i">
+		@if(jeu.getPlateau().getSac(i).isDisponible()) {
+			<a href="http://localhost:9000/choixcase?pion=@i"><img style="border:1px solid black;" src="@routes.Assets.at("images/pions/piece"+i+".gif")"/></a>
+		}
+		</span>
+	}
+	
+</div>
+}
+

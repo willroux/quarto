@@ -1,0 +1,18 @@
+@(jeu: models.Jeu)
+
+@import helper._
+
+@main(title="Le jeu du Quarto"){
+
+<table>
+		
+	@for(i<- 1 to jeu.getPlateau().getTaille()){
+		<tr id="tr_@i">
+			@for(j<-1 to jeu.getPlateau().getTaille()){
+				<td id="case_@i@j"><a href="http://localhost:9000/pion?case=@i@j">Case @i@j</a></td>
+			}
+		</tr>
+	}
+</table>
+}
+
