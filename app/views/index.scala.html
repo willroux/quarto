@@ -9,7 +9,7 @@
 		@for(i<- 1 to plateau.getTaille()){
 			<tr id="tr_@i">
 				@for(j<-1 to plateau.getTaille()){
-					<td id="case_@i@j">Case @i@j</td>
+					<td id="case_@i@j"><a href="http://localhost:9000/?case=@i@j">Case @i@j</a></td>
 				}
 			</tr>
 		}
