@@ -7,6 +7,7 @@ public class Plateau {
 	private boolean plein;
 	private Pion[] sac ;
 
+
 	public Plateau() {
 		taille = 4;
 		grille = new Case[taille][taille];
@@ -104,6 +105,14 @@ public class Plateau {
 
 	public Pion getSac(int i){
 		return sac[i];
+	}
+
+	public Pion[] getSac(){
+		return sac;
+	}
+
+	public int getTailleSac(){
+		return taille*taille;
 	}
 
 }
