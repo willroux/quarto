@@ -13,11 +13,13 @@ public class Pion {
 	 * ne pourront être changées. 
 	 */
 
+	private int id;
 	private boolean disponible=true;
 	private boolean plein; 		// true : plein, false : creux
 	private boolean rond;		// true : rond, false : carré
 	private boolean noir;		// true : noir, false : blanc
 	private boolean grand;		// true : grand, false : petit
+	
 
 	public Pion(boolean p, boolean r, boolean n, boolean g){
 		plein = p;
@@ -44,5 +46,13 @@ public class Pion {
 
 	public boolean isGrand() {
 		return grand;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int i) {
+		id=i;
 	}
 }

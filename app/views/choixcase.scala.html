@@ -5,11 +5,18 @@
 @main(title="Le jeu du Quarto"){
 
 <table>
-		
+	var i: int;
+	var j: int;
 	@for(i<- 1 to jeu.getPlateau().getTaille()){
 		<tr id="tr_@i">
 			@for(j<-1 to jeu.getPlateau().getTaille()){
-				<td id="case_@i@j"><a href="http://localhost:9000/pion?case=@i@j">Case @i@j</a></td>
+				<td id="case_@i@j">
+					@if(jeu.getPlateau().getGrille(i-1,j-1).isVide() == false) {
+						<img src="@routes.Assets.at("images/pions/piece"+jeu.getPlateau().getGrille(i-1,j-1).getPion().getId()+".gif")"/>
+					} else {
+						<a href="http://localhost:9000/pion?casepion=@i@j">Case @i@j</a>
+					}
+				</td>
 			}
 		</tr>
 	}
