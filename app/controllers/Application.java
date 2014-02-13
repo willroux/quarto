@@ -14,8 +14,8 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
-    public static Result choixcase() {
-        return ok(choixcase.render(jeu));
+    public static Result choixcase(Long pion) {
+        return ok(choixcase.render(jeu,pion));
     }
 
     public static Result pion() {

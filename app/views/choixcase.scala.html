@@ -1,4 +1,4 @@
-@(jeu: models.Jeu)
+@(jeu: models.Jeu, pion:Long)
 
 @import helper._
 
@@ -14,5 +14,16 @@
 		</tr>
 	}
 </table>
-}
+
+<div>
+	<h2>Pion a poser :</h2>
+		<span>
+		
+			<img style="border:1px solid black;" src="@routes.Assets.at("images/pions/piece"+pion+".gif")"/>
+		}
+		</span>
+	
+	
+</div>
+
 

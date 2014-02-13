@@ -39,8 +39,18 @@ public class IntegrationTest {
     public void testChoixCase() {
         running(testServer(9000, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
             public void invoke(TestBrowser browser) {
-                browser.goTo("http://localhost:9000/choixcase");
+                browser.goTo("http://localhost:9000/choixcase?pion=0");
                 assertThat(browser.pageSource()).contains("<a href=\"http://localhost:9000/pion?case=11\">");
+            }
+        });
+    }
+
+    @Test
+    public void testChoixPion() {
+        running(testServer(9000, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
+            public void invoke(TestBrowser browser) {
+                browser.goTo("http://localhost:9000/choixcase?pion=0");
+                assertThat(browser.pageSource()).contains("piece0.gif");
             }
         });
     }

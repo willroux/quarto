@@ -4,7 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-GET     /choixcase                           controllers.Application.choixcase()
+GET     /choixcase                           controllers.Application.choixcase(pion:Long)
 GET     /pion                           controllers.Application.pion()
 
 # Map static resources from the /public folder to the /assets URL path
