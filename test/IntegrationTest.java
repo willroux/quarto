@@ -25,4 +25,23 @@ public class IntegrationTest {
         });
     }
 
+    @Test
+    public void testPion() {
+        running(testServer(9000, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
+            public void invoke(TestBrowser browser) {
+                browser.goTo("http://localhost:9000/pion");
+                assertThat(browser.pageSource()).contains("Pions dans le sac :");
+            }
+        });
+    }
+
+    @Test
+    public void testChoixCase() {
+        running(testServer(9000, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
+            public void invoke(TestBrowser browser) {
+                browser.goTo("http://localhost:9000/choixcase");
+                assertThat(browser.pageSource()).contains("<a href=\"http://localhost:9000/pion?case=11\">");
+            }
+        });
+    }
 }
